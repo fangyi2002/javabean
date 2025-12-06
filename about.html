@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About me</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div class="skip">
+        <a href="#main-content">Skip to main content</a>
+    </div>
+
+    <header>
+        <a href="index.html" class="logo-link" aria-label="Javabean home page">
+            <img src="images/logo.png" id="logo" alt="Javabean coffee shop logo - a cup of coffee latte" width="50" height="50">
+        </a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home<span aria-hidden="true">&#127968</span></a></li>
+                <li><a href="map.html">My coffee map<span aria-hidden="true">&#128681</span></a></li>
+                <li><a href="about.html">About me<span aria-hidden="true">&#128521</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="about" aria-labelledby="about-heading">
+            <h1 id="about-heading">About Me</h1>
+            
+            <div class="about-content">
+                <p>Hi there! I'm Fangyi, and I study UX Research and Design at the University of Michigan School of Information. I drink coffee every day, and exploring local coffee spots has become one of my favorite ways to feel rooted, meet new people, and connect with the community around me.</p>
+            </div>
+            <h1 id="about-project-heading">About the Project</h1>
+            <div class="about-content">
+                <p>This webpage is my final project for SI 539: Web Design, Responsiveness, and Accessibility. Throughout the semester, we learned how to bring ideas to life using HTML, CSS, and JavaScript, and this project gave me the chance to apply those skills while having fun with a topic I genuinely enjoy. I hope you find the site engaging, accessible, and maybe even discover a new drink or café to try.</p>
+                <p>Enjoy! <span aria-hidden="true">☕💙</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Fangyi Li</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

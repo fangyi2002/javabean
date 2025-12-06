@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>My coffee map</title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <div class="skip">
+            <a href="#main-content">Skip to main content</a>
+        </div>
+
+        <header>
+            <a href="index.html" class="logo-link" aria-label="Javabean home page">
+                <img src="images/logo.png" id="logo" alt="Javabean coffee shop logo - a cup of coffee latte" width="50" height="50">
+            </a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home<span aria-hidden="true">&#127968</span></a></li>
+                    <li><a href="map.html">My coffee map<span aria-hidden="true">&#128681</span></a></li>
+                    <li><a href="about.html">About me<span aria-hidden="true">&#128521</span></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <h1>My personal favorite coffee spots!</h1>
+            <section id="coffee-map" aria-labelledby="map-heading">
+                <h2 id="map-heading">&#x1F4CD Click on the markers to view details</h2>
+                <div class="map-container">
+                    <iframe 
+                        id="google-map" 
+                        src="https://www.google.com/maps/d/embed?mid=1Z2-2Mj8xGJu_HOOQ37qAH95WbTxwMj4&ehbc=2E312F"
+                        width="100%" 
+                        height="500" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Coffee shop locations map"
+                        aria-label="Interactive map showing coffee shop locations">
+                    </iframe>
+                </div>
+            </section>
+            <section id="recommend-form" aria-labelledby="recommend-heading">
+                <h2 id="recommend-heading">Recommend a Coffee Spot</h2>
+                <p>Know a great place I should try? Share it with me!</p>
+
+                <form id="recommendation-form">
+                    <div>
+                        <label for="spot-name">Coffee shop name<span class="required-asterisk" aria-label="required">*</span></label>
+                        <input type="text" id="spot-name" name="spot-name" required>
+                    </div>
+
+                    <div>
+                        <label for="spot-location">Location<span class="required-asterisk" aria-label="required">*</span></label>
+                        <input type="text" id="spot-location" name="spot-location" placeholder="City, neighborhood..." required>
+                    </div>
+
+                    <div>
+                        <label for="why-love">Why do you recommend it?</label>
+                        <textarea id="why-love" name="why-love" rows="4" placeholder="Tell me what makes it special..." required></textarea>
+                    </div>
+
+                    <div>
+                        <label for="drink-rec">What should I order there?<span class="required-asterisk" aria-label="required">*</span></label>
+                        <input type="text" id="drink-rec" name="drink-rec" required>
+                    </div>
+
+                    <button type="submit">Submit Recommendation</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="year"></span> Fangyi Li</p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>

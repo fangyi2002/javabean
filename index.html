@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Javabean</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <div class="skip">
+        <a href="#main-content">Skip to main content</a>
+    </div>
+
+    <header>
+        <a href="index.html" class="logo-link" aria-label="Javabean home page">
+            <img src="images/logo.png" id="logo" alt="Javabean coffee shop logo - a cup of coffee latte" width="50" height="50">
+        </a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home<span aria-hidden="true">&#127968</span></a></li>
+                <li><a href="map.html">My coffee map<span aria-hidden="true">&#128681</span></a></li>
+                <li><a href="about.html">About me<span aria-hidden="true">&#128521</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="quiz-box collapsed" aria-label="Coffee drink recommendation quiz">
+        <div class="quiz-header">
+            <h2>Find Your Favorite Coffee Drink!</h2>
+            <button type="button" class="quiz-toggle" aria-expanded="false" aria-controls="quiz-content" id="quiz-toggle-btn">
+                <span class="toggle-icon" aria-hidden="true">+</span>
+                <span class="sr-only">Expand quiz</span>
+            </button>
+        </div>
+        <div id="quiz-content" class="quiz-content">
+            <p>Answer a few quick questions and discover your ideal drink.</p>
+
+            <form id="quiz-form">
+                <div>
+                    <label for="strength">1. How strong do you like your coffee?</label>
+                    <select id="strength" name="strength" required>
+                        <option value="mild">Mild</option>
+                        <option value="medium">Medium</option>
+                        <option value="strong">Strong</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="milk">2. How much milk do you prefer?</label>
+                    <select id="milk" name="milk" required>
+                        <option value="none">No milk</option>
+                        <option value="some">A little milk</option>
+                        <option value="creamy">Very creamy</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="sweet">3. Do you like sweet flavors?</label>
+                    <select id="sweet" name="sweet" required>
+                        <option value="no">Not really</option>
+                        <option value="sometimes">Sometimes</option>
+                        <option value="yes">Yes, definitely</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="temp">4. Hot or iced?</label>
+                    <select id="temp" name="temp" required>
+                        <option value="hot">Hot</option>
+                        <option value="iced">Iced</option>
+                        <option value="depends">It depends</option>
+                    </select>
+                </div>
+
+                <button type="submit">Get My Drink &#x2615</button>
+            </form>
+
+            <div id="quiz-result" role="status" aria-live="polite" aria-atomic="true"></div>
+        </div>
+    </aside>
+
+    <main id="main-content" class="main-sections">
+        <h1><span aria-hidden="true">&#x2615</span>Welcome to Javabean!</h1>
+        <section id="drinks" aria-labelledby="drinks-heading">
+            <h2 id="drinks-heading">Coffee Drinks</h2>
+            <p>Explore the most common types of coffee drinks and what makes each one special.</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Espresso</h3>
+                    <p>Rich and intense. The base for most coffee drinks.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Americano</h3>
+                    <p>Espresso with hot water. Smooth and bold.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Latte</h3>
+                    <p>Espresso with steamed milk. Creamy and mild.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Cappuccino</h3>
+                    <p>Equal parts espresso, milk, and foam. Balanced and warm.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Mocha</h3>
+                    <p>Chocolate, espresso, and milk. A sweet treat.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Flat White</h3>
+                    <p>Smooth microfoam and rich espresso flavor.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="beans" aria-labelledby="beans-heading">
+            <h2 id="beans-heading">Coffee Beans</h2>
+            <p>Learn about the different types of coffee beans and where they come from.</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Arabica</h3>
+                    <p>Sweet, smooth, and often floral or fruity. The most popular bean.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Robusta</h3>
+                    <p>Strong and bold with higher caffeine. Earthy flavor profile.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Liberica</h3>
+                    <p>Unique smoky and woody flavors. Less common but memorable.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="roasts" aria-labelledby="roasts-heading">
+            <h2 id="roasts-heading">Roast Levels</h2>
+            <p>Roasting affects flavor, aroma, and strength. Explore the three main roast styles.</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Light Roast</h3>
+                    <p>Bright and fruity with higher acidity.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Medium Roast</h3>
+                    <p>Balanced flavor and aroma. A crowd favorite.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Dark Roast</h3>
+                    <p>Bold, smoky, and intense with low acidity.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Fangyi Li</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
